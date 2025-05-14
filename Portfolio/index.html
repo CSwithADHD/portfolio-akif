@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: #007bff;
+            text-decoration-thickness: 3px;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: left;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Flip Card Styles */
+        .flip-container {
+            perspective: 1000px;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .flipper {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .flip-container:hover .flipper {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .front img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .back {
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .back p {
+            margin: 10px 0;
+        }
+
+        /* Certificate Image */
+        .certificate-img {
+            width: 400px;
+            height: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Portfolio</h1>
+
+    <h2>NAME:</h2>
+    <p><b>Akif Ahmed Siddiqui</b></p>
+
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="./Images/my Image.jpg" alt="Akif Ahmed Siddiqui">
+            </div>
+            <div class="back">
+                <p><b>Akif Ahmed Siddiqui</b></p>
+                <p>Developer</p>
+                <p>Aspiring AI/ML Engineer</p>
+                <p>Email: akif.siddiqui@email.com</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>OCCUPATION:</h2>
+    <p>Developer</p>
+    <hr>
+
+    <h2>HOBBIES:</h2>
+    <p>Gym, Cricket, Poetry</p>
+    <hr>
+
+    <h2>SKILLSET:</h2>
+    <ul>
+        <li>FrontEnd Development</li>
+        <li><p><a href="https://github.com/CSwithADHD/PYTHON-PROJECTS/blob/main/snakegame.py"> PYTHON Game Development</a></p></li>
+        <li>Aspiring AI/ML Engineer</li>
+    </ul>
+    <hr>
+
+    <h2>PROFESSIONAL PRESENCE:</h2>
+    <ul>
+    <a href="https://github.com/CSwithADHD" target="_blank">GitHub</a><br>
+    <a href="https://www.linkedin.com/in/akif-ahmed-705226252" target="_blank">LinkedIn</a>
+    <a href="mailto:akifahmedsiddiqui25@gmail.com"> Email</a>
+    <a href="tel: +923352942734">Phone Number</a>
+    <hr>
+</ul>
+<h2>COLLABORATION:</h2>
+
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front">
+            <img src="./Images/certificate.jpg" alt="Collaboration Certificate 1">
+        </div>
+        <div class="back">
+            <p><b>CodeX 2024 Hackathon</b></p>
+            <p>Role: Frontend Developer</p>
+            <p>Organized by ABC University</p>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front">
+            <img src="./Images/Bahria Certificate.jpg" alt="Collaboration Certificate 2">
+        </div>
+        <div class="back">
+            <p><b>AI Workshop - Bahria</b></p>
+            <p>Role: Participant</p>
+            <p>Focused on ML Model Deployment</p>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+    <h2><a href="./aboutme.html"> About Me</a></h2>
+    <!-- SMIT ID CARD -->
+        <tr>
+            <table border="1" > 
+            <th>Name</th>
+            <th>Enrollment</th>
+            <th>CNIC</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+        </table>   
+           <table border="1" > 
+            <td>Akif</td>           
+             <td>SMIT 414829</td>
+            <td>Modern Web And App Development</td>
+        
+ 
+        </tr>
+    </table>
+
+</body>
+</html>
