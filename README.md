@@ -25,6 +25,6 @@ Hi, I'm Akif Ahmed Siddiqui– a [your role: e.g., Web Developer, Python Program
 - **Backend:** [Node.js, Flask, etc.]
 - **Design:** Figma / Canva / [your choice]
 - **Tools:** Git, GitHub, VS Code, [others]
-
+{{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
 ---
 
